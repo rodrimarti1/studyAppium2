@@ -1,0 +1,12 @@
+.idea/**/workspace.xml
+.idea/**/libraries
+.idea/modules.xml
+.idea/
+*.class
+*.iml
+out/
+.DS_Store
+projects/Gospel-Library-Appium-Tests/src/UI/EnvironmentConfig.java
+*.apk
+exportToHTML/
+Test Runs/
