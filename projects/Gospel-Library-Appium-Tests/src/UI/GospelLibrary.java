@@ -46,14 +46,14 @@ public class GospelLibrary {
     public void setUp() throws Exception {
         Thread.sleep(milliseconds_2);
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "Android");
-        capabilities.setCapability("udid", theUDID);
-        capabilities.setCapability("app", thePath + "APK/gospel-library-" + GospelLibraryBuild + ".apk");
-        if (AndroidVersion > 5) {
-            capabilities.setCapability("automationName", "UiAutomator2");
-        }
-        capabilities.setCapability("chromedriverChromeMappingFile", thePath + "ChromeDriver/chromeDriverMappings.json");
-        capabilities.setCapability("chromedriverExecutableDir", thePath + "ChromeDriver");
+
+        capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("platformVersion", "10.0");
+        capabilities.setCapability("deviceName", "Android SDK built for x86");
+        capabilities.setCapability("app", System.getProperty("user.dir") + "/APK/gospel-library-" + GospelLibraryBuild + ".apk");
+        System.out.println(System.getProperty("user.dir") + "/APK/gospel-library-" + GospelLibraryBuild + ".apk");
+        capabilities.setCapability("chromedriverExecutableDir", System.getProperty("user.dir") + "/ChromeDriver");
+        ///Users/crossfitpt/gospellibraryappiumtestsandroid/ChromeDriver/chromedriver
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:" + theAppiumPort + "/wd/hub"), capabilities);
         setBooks();
@@ -82,12 +82,6 @@ public class GospelLibrary {
     //Replaces letters with dots
     public String hidePassword(String password) throws Exception {
         String passwordDotted = "";
-//        if (AndroidVersion > 6) {
-//            int passwordLength = password.length();
-//            for (int i = 0; i < passwordLength; i++) {
-//                passwordDotted = passwordDotted.concat("•");
-//            }
-//        }
         passwordDotted = password;
         return passwordDotted;
     }
@@ -363,7 +357,8 @@ public class GospelLibrary {
             text = isAllCaps(text);
         }
         String xPathofText = "//android.widget.TextView[@text='" + text + "']";
-        //System.out.println("Xpath of current item is: "+xPathofText+"");
+        System.out.println("THIS IS THE THING YOU'RE LOOKING FOR");
+        System.out.println("Xpath of current item is: "+xPathofText+"");
         WebElement itemToClick = driver.findElement(By.xpath(xPathofText));
         itemToClick.click();
         System.out.println("Clicking: '" + text + "' using text by xPath with TextView");
@@ -821,7 +816,6 @@ public class GospelLibrary {
         Thread.sleep(1000);
     }
 
-
     //
 
     public void ClickSeekBarAt(WebElement webelement, int positionOf7) throws Exception {
@@ -887,6 +881,7 @@ public class GospelLibrary {
         System.out.println(seconds);
         minutes = minutes + minutesToAdd;
         System.out.println(minutes);
+
 
         if (seconds >= 60) {
             seconds = (seconds - 60);
@@ -1665,7 +1660,6 @@ public class GospelLibrary {
             } catch (Exception e) {
                 System.out.println("Exception Occured");
             }
-
         }
         assert tempElement;
         driver.context("NATIVE_APP");
@@ -1851,13 +1845,14 @@ public class GospelLibrary {
     }
 
     public void OpenScripture(String work, String book, String chapter, String verse) throws Exception {
+
         assertElementExistsBy(WebElementsByText("Scriptures", false));
         ClickUIElementByText("Scriptures", false);
         Thread.sleep(milliseconds_1);
 
-
         ClickUIElementByText(work, false);
         Thread.sleep(milliseconds_1);
+
         if (book != "") {
             scrollDownTo(book);
             ClickUIElementByText(book, false);
@@ -1873,7 +1868,6 @@ public class GospelLibrary {
                 scrollToByResourceId("p" + verse);
             }
         }
-
     }
 
     public void OpenConference(String month, String year, String talkTitle) throws Exception {
@@ -2535,7 +2529,7 @@ public class GospelLibrary {
         int markX = (menuBottomX + margin + (buttonWidth / 2));
         int noteX = (menuBottomX + margin + buttonWidth + (buttonWidth / 2));
         int tagX = (menuBottomX + margin + (buttonWidth * 2) + (buttonWidth / 2));
-        int addToX = (menuBottomX + margin + (buttonWidth * 3) + (buttonWidth / 2));
+        int addToX = 688; //(menuBottomX + margin + (buttonWidth * 3) + (buttonWidth / 2));
         int linkX = (menuBottomX + margin + (buttonWidth * 4) + (buttonWidth / 2));
         int copyX = (menuBottomX + margin + (buttonWidth / 2));
         int shareX = (menuBottomX + margin + buttonWidth + (buttonWidth / 2));
@@ -3279,7 +3273,6 @@ public class GospelLibrary {
     public void skipLogin() throws Exception {
 
         skipTips();
-//        click skip
         System.out.println("Skipping Login Screen");
         driver.findElementById("org.lds.ldssa." + GospelLibraryBuild + ":id/done").click();
         Thread.sleep(milliseconds_1);
@@ -3354,7 +3347,7 @@ public class GospelLibrary {
         verifyText(CreateAccountString, WebElementById(AppId("ldsAccountLoginCreateAccountButton")), true);
         ClickUIElementByID(AppId("ldsAccountLoginCreateAccountButton"));
         Thread.sleep(milliseconds_5);
-        verifyTextContains("ident.churchofjesuschrist.org/sso/UI/Login?realm=%2Fchurch&service=twoStepConditional&goto=https%3A%2F%2Fident.churchofjesuschrist.org%2Fsso%2Foauth2%2Fauthorize%3Fclient_id%3Dvx3Je3bU9Xoioffq%26redirect_uri%3Dhttps%253A%252F%252Faccount.churchofjesuschrist.org%252Flogin%26scope%3Dopenid%2520profile%26response_type%3Dcode%26state%3D%26acr_values%3D210", WebElementById("com.android.chrome:id/url_bar"), false);
+        verifyTextContains("https://login.churchofjesuschrist.org/?goto=https%3A%2F%2Fident.churchofjesuschrist.org%2Fsso%2Foauth2%2Fauthorize%3Fclient_id%3DnlEHhNVUKWxOcQj6%26redirect_uri%3Dhttps%253A%252F%252Faccount.churchofjesuschrist.org%252Flogin%26scope%3Dopenid%2520profile%26response_type%3Dcode%26state%3D%26acr_values%3D210%26acr%3D210%26acr_sig%3D7M8Vu2l3nuOGcEJBTypck5Xu2B3_pzhSiOIu1RwixG0&acr_values=210&realm=/church&service=210", WebElementById("com.android.chrome:id/url_bar"), false);
     }
 
 
@@ -4703,11 +4696,11 @@ public class GospelLibrary {
         assertMoreOptionsMenu("Library", false);
         assertElementExistsBy(WebElementsByText("Settings", false));
         ClickUIElementByText("Settings", false);
-        assertElementExistsBy(WebElementsByText("Sign In", false));
-        ClickUIElementByText("Sign In", false);
-        ClickUIElementByID(AppId("ldsAccountLoginForgotCredentialsButton"));
-        Thread.sleep(milliseconds_5);
-        verifyText("ident.churchofjesuschrist.org/sso/UI/Login?realm=%2Fchurch&service=twoStepConditional&goto=https%3A%2F%2Fident.churchofjesuschrist.org%2Fsso%2Foauth2%2Fauthorize%3Fclient_id%3Dvx3Je3bU9Xoioffq%26redirect_uri%3Dhttps%253A%252F%252Faccount.churchofjesuschrist.org%252Flogin%26scope%3Dopenid%2520profile%26response_type%3Dcode%26state%3D%26acr_values%3D210", WebElementById("com.android.chrome:id/url_bar"), false);
+//        assertElementExistsBy(WebElementsByText("Sign In", false));
+//        ClickUIElementByText("Sign In", false);
+//        ClickUIElementByID(AppId("ldsAccountLoginForgotCredentialsButton"));
+//        Thread.sleep(milliseconds_5);
+//        verifyText("ident.churchofjesuschrist.org/sso/UI/Login?realm=%2Fchurch&service=twoStepConditional&goto=https%3A%2F%2Fident.churchofjesuschrist.org%2Fsso%2Foauth2%2Fauthorize%3Fclient_id%3Dvx3Je3bU9Xoioffq%26redirect_uri%3Dhttps%253A%252F%252Faccount.churchofjesuschrist.org%252Flogin%26scope%3Dopenid%2520profile%26response_type%3Dcode%26state%3D%26acr_values%3D210", WebElementById("com.android.chrome:id/url_bar"), false);
     }
 
 
@@ -6585,7 +6578,6 @@ public class GospelLibrary {
         ClickUIElementByAccessibilityID("Submit");
         Thread.sleep(milliseconds_5);
         assertElementExistsBy(WebElementsByText("Settings", false));
-
     }
 
 
@@ -7149,7 +7141,7 @@ public class GospelLibrary {
         CreateNewNotebook();
         ClickUIElementByAccessibilityID("Navigate up");
         OpenScripture("Book of Mormon", "Jacob", "5", "");
-        OpenAnnotationMenu("p1", "Add to");
+        OpenAnnotationMenu("p1", "Add to"); //failing here
         assertAddToNotebookScreen(false);
         ClickUIElementByResourceID("notebookCheckBox");
         ClickUIElementByAccessibilityID("Navigate up");
