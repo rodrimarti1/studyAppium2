@@ -186,42 +186,42 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing SettingsBackClickTest.");
             //Settings button Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Find Settings text
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Back arrow button exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Back arrow button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Coloring Books main title element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Coloring Books screen main title element text matches
-            main.verifyTextContains("Coloring Books", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]"), false);
+            main.verifyTextContains("Coloring Books", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -246,12 +246,12 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing VerifySettingsScreenElementsTest.");
             //Settings button Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -266,92 +266,127 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Back arrow button Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Back arrow icon Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Find Settings text
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
-            //Element exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("recyclerView")));
+            //main section ScrollView Element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language main title element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language text matches
+            main.verifyTextContains("Language", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language button element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Translated Language text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Translated Language text matches
+            main.verifyTextContains("English", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Selected Language text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[2]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Selected Language text matches
+            main.verifyTextContains("English", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[2]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Additional Info main title element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Additional Info text matches
-            main.verifyTextContains("Additional Info", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[1]"), false);
+            main.verifyTextContains("Additional Info", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[2]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps text matches
-            main.verifyTextContains("Featured Apps", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView"), false);
+            main.verifyTextContains("Featured Apps", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback tet matches
-            main.verifyTextContains("Send Feedback", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView"), false);
+            main.verifyTextContains("Send Feedback", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About button text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About text matches
-            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[1]"), false);
+            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[1]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Version text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Version text matches
-            main.verifyTextContains(Strings.versionNumber, main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]"), true);
+            main.verifyTextContains(Strings.versionNumber, main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[2]"), true);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -376,12 +411,12 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing VerifySettingsScreenElementsDeveloperModeTest.");
             //Settings button Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -396,162 +431,229 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Back arrow button Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Back arrow icon Element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Find Settings text
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
-            //Element exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("recyclerView")));
+            //main section ScrollView Element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language main title element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language text matches
+            main.verifyTextContains("Language", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Language button element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Translated Language text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Translated Language text matches
+            main.verifyTextContains("English", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Selected Language text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[2]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Selected Language text matches
+            main.verifyTextContains("English", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[1]/android.widget.TextView[2]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Additional Info main title element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Additional Info text matches
-            main.verifyTextContains("Additional Info", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[1]"), false);
+            main.verifyTextContains("Additional Info", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[2]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Featured Apps text matches
-            main.verifyTextContains("Featured Apps", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView"), false);
+            main.verifyTextContains("Featured Apps", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Send Feedback tet matches
-            main.verifyTextContains("Send Feedback", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView"), false);
+            main.verifyTextContains("Send Feedback", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About button text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //About text matches
-            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[1]"), false);
+            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[1]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Version text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Version text matches
-            main.verifyTextContains(Strings.versionNumber, main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]"), true);
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-            //Horizontal Separator bar
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.View"));
+            main.verifyTextContains(Strings.versionNumber, main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]/android.widget.TextView[2]"), true);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Developer Mode text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[3]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Developer Mode text matches
-            main.verifyTextContains("Developer Mode", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.TextView[2]"), false);
+            main.verifyTextContains("Developer Mode", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[3]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Min Interval Switch
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Min Interval text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Min Interval text matches
-            main.verifyTextContains("Work Manager Min Interval", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[1]"), false);
+            main.verifyTextContains("Work Manager Min Interval", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]/android.widget.TextView[1]"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Description text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Description text matches
-            main.verifyTextContains("Force all scheduled work to min periodic interval (15 minutes). Cancel all work, and app restart required.", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.TextView[2]"), false);
+            main.verifyTextContains("Force all scheduled work to min periodic interval (15 minutes). Cancel all work, and app restart required.", main.WebElementByXpath("            main.assertElementExistsBy(main.WebElementsByXpath(\"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]/android.widget.TextView[2]\"));\n"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Switch View exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("switchView")));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[5]/android.widget.Switch"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Monitor button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[6]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Monitor text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[6]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Work Manager Monitor text matches
-            main.verifyTextContains("Work Manager Monitor", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.TextView"), false);
+            main.verifyTextContains("Work Manager Monitor", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[6]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //View All DataStore Values button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[7]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //View All DataStore Values text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[7]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //View All DataStore Values text matches
-            main.verifyTextContains("View All DataStore Values", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.TextView"), false);
+            main.verifyTextContains("View All DataStore Values", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[7]/android.widget.TextView"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Scroll down
+            main.swipeByCoordinates(550, 1900, 550, 350);
+            //Update stories database on launch Switch
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Update stories database on launch text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]/android.widget.TextView[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Update stories database on launch text matches
+            main.verifyTextContains("Update stories database on launch.", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Description text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]/android.widget.TextView[2]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Description text matches
+            main.verifyTextContains("Forces update of stories database on launch.", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]/android.widget.TextView[2]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Switch View exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[8]/android.widget.Switch"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -863,12 +965,12 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Find Settings text
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -903,12 +1005,12 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Returned to Settings from About. Settings text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Settings text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -932,8 +1034,9 @@ public class GospelForKids {
             main.testsPassed++;
             //Test Start
             System.out.println("Testing VerifySettingsAboutScreenElementsTest.");
-            //Settings button Element exists
+            //Settings button Element exists By text
             main.assertElementExistsBy((List) main.WebElementByButtonText("About", false));
+            //Settings button Element exists
             main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
@@ -1124,23 +1227,23 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing VerifyAboutScreenAppInstanceIdElementsTest.");
             //Verify Settings Widget Icon Button Exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings Widget Icon Button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Displays
             //Settings title text  exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Title Text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -1285,65 +1388,120 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing AboutScreenAppInstanceIdOkClickTest.");
             //Verify Settings Widget Icon Button Exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings Widget Icon Button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Displays
             //Settings title text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Title Text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings About Button Exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings About Button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[4]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify About Screen Displays
             //About title text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify About Screen Title Text matches
-            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //App Instance ID icon Button Exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("about_info")));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //App Instance ID Button container Exists
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Information\"]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //App Instance ID widget Button container Exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click App Instance ID icon Button
-            main.ClickUIElementByID(main.AppId("about_info"));
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify App Instance ID Popup Displays
+            //FrameLayout container element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //FrameLayout Content container element exists
+            main.assertElementExistsBy(main.WebElementsById(main.AppId("content")));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //ViewGroup container element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //View container element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //View child container element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //View grand-child container element exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
             //App Instance ID title text exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("alertTitle")));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify App Instance ID Title Text matches
-            main.verifyTextContains("App Instance ID", main.WebElementById(main.AppId("alertTitle")), false);
+            main.verifyTextContains("App Instance ID", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //App Instance ID code text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[2]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup OK Button Exists
+            main.assertElementExistsByWebElement(main.WebElementById(main.AndroidId("button1")));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup OK Title Text matches
+            main.verifyTextContains("OK", main.WebElementById(main.AndroidId("button1")), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -1396,23 +1554,23 @@ public class GospelForKids {
             //Test Start
             System.out.println("Testing AboutScreenAppInstanceIdCopyClickTest.");
             //Verify Settings Widget Icon Button Exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Settings Widget Icon Button
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Displays
             //Settings title text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings Screen Title Text matches
-            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("Settings", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -2020,12 +2178,7 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Verify Settings button exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-            //Verify Settings icon exists
-            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Settings\"]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -2097,7 +2250,7 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //Settings Element exists
-            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Settings\"]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;

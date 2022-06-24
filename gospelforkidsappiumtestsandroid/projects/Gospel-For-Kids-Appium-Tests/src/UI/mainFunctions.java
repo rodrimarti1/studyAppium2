@@ -1899,7 +1899,7 @@ public class mainFunctions {
     }
 
     //Swipe to by coordinates
-    public void SwipeByCoordinates(int fromX, int fromY, int toX, int toY) throws Exception {
+    public void swipeByCoordinates(int fromX, int fromY, int toX, int toY) throws Exception {
 
         TouchAction action = new TouchAction(driver);
         System.out.println("Scrolling to: Bottom");Thread.sleep(10000);

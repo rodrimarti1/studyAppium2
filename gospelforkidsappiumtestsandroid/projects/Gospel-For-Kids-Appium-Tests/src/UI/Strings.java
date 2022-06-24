@@ -2,7 +2,7 @@ package UI;
 
 public abstract class Strings {
 
-    public static String versionNumber = "1.1.0 (1172.135)-ALPHA";
+    public static String versionNumber = "1.3.0 (1242.203)-ALPHA";
 
     //log in with
     public static String user = "jnknielsen@churchofjesuschrist.org";

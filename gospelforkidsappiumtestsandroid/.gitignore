@@ -1,0 +1,9 @@
+.idea/**/workspace.xml
+.idea/**/libraries
+.idea/modules.xml
+*.class
+*.iml
+out/
+.DS_Store
+projects/Just-Serve-Appium-Tests/src/UI/EnvironmentConfig.java
+*.apk
