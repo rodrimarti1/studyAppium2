@@ -1495,23 +1495,23 @@ public class GospelForKids {
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
+            //Verify Popup Copy Button Exists
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup Copy Title Text matches
+            main.verifyTextContains("Copy", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
             //Verify Popup OK Button Exists
             main.assertElementExistsByWebElement(main.WebElementById(main.AndroidId("button1")));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Popup OK Title Text matches
-            main.verifyTextContains("OK", main.WebElementById(main.AndroidId("button1")), false);
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-            //Verify Popup OK Button Exists
-            main.assertElementExistsByWebElement(main.WebElementById(main.AndroidId("button1")));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-            //Verify Popup OK Title Text matches
-            main.verifyTextContains("OK", main.WebElementById(main.AndroidId("button1")), false);
+            main.verifyTextContains("OK", main.WebElementByXpath("button1"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
