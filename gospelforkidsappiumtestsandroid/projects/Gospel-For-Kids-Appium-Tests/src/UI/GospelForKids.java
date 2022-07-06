@@ -1456,7 +1456,7 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
             //FrameLayout Content container element exists
-            main.assertElementExistsBy(main.WebElementsById(main.AppId("content")));
+            main.assertElementExistsBy(main.WebElementsById(main.AndroidId("content")));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -1500,34 +1500,54 @@ public class GospelForKids {
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
+            //Verify Popup Copy Text Exists
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
             //Verify Popup Copy Title Text matches
-            main.verifyTextContains("Copy", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]"), false);
+            main.verifyTextContains("Copy", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup Copy Widget Button Container Exists
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Popup OK Button Exists
-            main.assertElementExistsByWebElement(main.WebElementById(main.AndroidId("button1")));
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]"));
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup OK Text Exists
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify Popup OK Title Text matches
-            main.verifyTextContains("OK", main.WebElementByXpath("button1"), false);
+            main.verifyTextContains("OK", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"), false);
+            Thread.sleep(milliseconds_1);
+            main.countTestCases++;
+            main.testsPassed++;
+            //Verify Popup OK Widget Button Container Exists
+            main.assertElementExistsByWebElement(main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Click Popup OK Button
-            main.ClickUIElementByID(main.AndroidId("button1"));
+            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify You Returned To The About Screen
-            //Settings title text exists
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"));
+            //About title text exists
+            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             //Verify About Screen Title Text matches
-            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView"), false);
+            main.verifyTextContains("About", main.WebElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.TextView"), false);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
