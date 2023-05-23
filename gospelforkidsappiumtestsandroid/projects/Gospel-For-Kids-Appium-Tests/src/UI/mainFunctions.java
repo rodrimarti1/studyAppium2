@@ -1,17 +1,22 @@
 package UI;
 
         import io.appium.java_client.AppiumDriver;
+        import io.appium.java_client.PerformsTouchActions;
         import io.appium.java_client.TouchAction;
         import io.appium.java_client.android.AndroidDriver;
         import io.appium.java_client.android.AndroidKeyCode;
         import io.appium.java_client.android.AndroidKeyMetastate;
         import org.junit.Assert;
         import org.openqa.selenium.By;
+        import org.openqa.selenium.Dimension;
         import org.openqa.selenium.JavascriptExecutor;
         import org.openqa.selenium.WebElement;
+        import org.openqa.selenium.support.ui.ExpectedConditions;
+        import org.openqa.selenium.support.ui.WebDriverWait;
 
         import java.text.DateFormat;
         import java.text.SimpleDateFormat;
+        import java.time.Duration;
         import java.util.ArrayList;
         import java.util.Date;
         import java.util.List;
@@ -20,6 +25,7 @@ package UI;
         import static UI.EnvironmentConfig.*;
         import static UI.Strings.*;
         import static java.lang.Integer.parseInt;
+        import static java.time.Duration.*;
         import static org.junit.jupiter.api.Assertions.fail;
 
 
@@ -1694,6 +1700,8 @@ public class mainFunctions {
         }
     }
 
+
+
     //assert screen item options
     public void assertScreenItemOptions(String title, Boolean close) throws Exception {
         ClickUIElementByXpath("//android.widget.TextView[@text=\""+ title +"\"]/../../android.widget.ImageButton");
@@ -1839,6 +1847,7 @@ public class mainFunctions {
         }
     }
 
+
     //Scroll to by Resource id
     public void scrollToByResourceId(String id) throws Exception {
         System.out.println("Scrolling to: " + id);
@@ -1910,7 +1919,7 @@ public class mainFunctions {
                 .release()
                 .perform();
     }
-
+//
     //Swipe left to by coordinates
     public void SwipeLeftByCoordinates(int fromX, int fromY, int toX, int toY) throws Exception {
 
@@ -1921,6 +1930,51 @@ public class mainFunctions {
                 .release()
                 .perform();
     }
+
+    public void SwipeLeftByScreenSize() throws Exception {
+        Dimension deviceSize = driver.manage().window().getSize();
+        int deviceWidth = deviceSize.getWidth();
+        int deviceHeight = deviceSize.getHeight();
+        System.out.println("deviceheight" + deviceHeight);
+        System.out.println("devicewidth" + deviceWidth);
+        int fromX = deviceWidth / 2;
+        int fromY = deviceHeight - 100  ; //6
+        int toX = 50;
+        int toY = deviceHeight - 100;
+        
+        
+        TouchAction action = new TouchAction(driver);
+        System.out.println("Swiping left...");Thread.sleep(10000);
+        action.longPress(fromX, fromY)
+                .moveTo(toX, toY)
+                .release()
+                .perform();
+    }
+
+
+    public void SwipeRightByScreenSize() throws Exception {
+        Dimension deviceSize = driver.manage().window().getSize();
+        int deviceWidth = deviceSize.getWidth();
+        int deviceHeight = deviceSize.getHeight();
+        System.out.println("deviceheight" + deviceHeight);
+        System.out.println("devicewidth" + deviceWidth);
+        int fromX = deviceWidth / 2 ;
+        int fromY = deviceHeight - 100  ; //6
+        int toX = deviceWidth / 2 + 400;
+        int toY = deviceHeight - 100;
+
+
+        TouchAction action = new TouchAction(driver);
+        System.out.println("Swiping left...");Thread.sleep(10000);
+        action.longPress(fromX, fromY)
+                .moveTo(toX, toY)
+                .release()
+                .perform();
+    }
+
+
+
+
 
     //Swipe right to by coordinates
     public void SwipeRightByCoordinates(int fromX, int fromY, int toX, int toY) throws Exception {
@@ -2078,9 +2132,14 @@ public class mainFunctions {
         if (tempElement == false) {
             System.out.println("Found " + webElementsBy.size() + ". List of Elements Found: " + webElementsBy);
         }
-        assert tempElement == true;
+        assert (tempElement == true);
     }
 
+
+//    public void waitForElement(WebElement myElement) {
+//        WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(120));
+//        wait.until(ExpectedConditions.visibilityOf(myElement));
+  //  }
 //    //Verify Object Exists and scroll to it
 //    public void assertAndScrollToElementExistsBy(List webElementsBy, WebElement webElementBy){
 //        scrollToBy(webElementBy);
@@ -2096,6 +2155,29 @@ public class mainFunctions {
         System.out.println("assert element is not present. Expected: false [] Actual: " + tempElement + " " + webElementsBy.toString() + "");
         assert tempElement == false;
     }
+
+
+
+    //Wait until the item loaded
+//
+//    public boolean checkForElement(WebElement myElement ) {
+//        try {
+//            WebDriverWait wait = new WebDriverWait(driver, 10);
+//            wait.until(ExpectedConditions.elementToBeClickable(myElement));
+//            return true;
+//        } catch (Exception e) {
+//            return false;
+//        }
+//    }
+
+    //waiting for element to lo
+
+//    public void waitForElementToDisappear(WebElement myElement) {
+//        System.out.println("Start Checking for Element");
+//        WebDriverWait wait = new WebDriverWait(driver, 90);
+//        wait.until(ExpectedConditions.invisibilityOf(myElement));
+//        System.out.println("Stop Checking for Element");
+//    }
 
     //Assert Settings Switch and toggle
     public void assertSettingsSwitchExpectedStateAndToggle(String SwitchTitle, Boolean ExpectedState) throws Exception {
@@ -2312,6 +2394,17 @@ public class mainFunctions {
         assertElementExistsBy(WebElementsByAccessibilityId("Bookmarks"));
         assertElementExistsBy(WebElementsByAccessibilityId("More options"));
     }
+
+
+    public void ParentalQuestion() throws Exception{
+        String Question;
+
+        Question = driver.findElementByXPath("/hierarchy/android.view.ViewGroup/android.view.View/android.view.View/android.widget.ScrollView/android.widget.TextView[3]").getText();
+        System.out.print(Question);
+
+    }
+
+
 
     //Assert Side Bar
     public void assertSideBar(String title, Boolean isAnnotation, String annotationType, String TagName) throws Exception {
