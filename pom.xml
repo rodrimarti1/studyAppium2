@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>GFK-test</artifactId>
+  <artifactId>qa-gospelforkids-android-alpha</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>GFK-test</name>
+  <name>qa-gospelforkids-android-alpha</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -26,7 +26,7 @@
     <dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
-      <version>8.3.0</version>
+      <version>8.5.1</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
