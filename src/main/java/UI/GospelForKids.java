@@ -17,12 +17,9 @@ import static UI.EnvironmentConfig.*;
 
 
 public class GospelForKids {
-    //AppiumDriver driver;
     static mainFunctions main;
 
-    public AppiumDriverLocalService service;
     static Timestamp startTime = new Timestamp(System.currentTimeMillis());
-    //Date startTime = new Date();
     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS");
     boolean msg;
     String msgStr;
@@ -31,18 +28,6 @@ public class GospelForKids {
     public void setUp() throws Exception {
         Thread.sleep(milliseconds_2);
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
-        //capabilities.setCapability("platformName", "Android");
-        //capabilities.setCapability("platformVersion", "13.0");
-        //capabilities.setCapability("deviceName", "Android Device");
-        // capabilities.setCapability("deviceName", "Galaxy S8");
-        //capabilities.setCapability("deviceName", "Android Emulator");
-        //capabilities.setCapability("deviceName", "Android SDK built for x86");
-        //capabilities.setCapability("app", System.getProperty("user.dir") + "/APK/app-alpha.apk");
-        //capabilities.setCapability("automationName", "UiAutomator2");
-        //System.out.println(System.getProperty("user.dir") + "/APK/app-alpha.apk");
-        //capabilities.setCapability("chromedriverExecutableDir", System.getProperty("user.dir") + "/ChromeDriver/");
-        //capabilities.setCapability("browserName", "Chrome");
 
         capabilities.setCapability("deviceName", "emulator-5554");
         capabilities.setCapability("app", System.getProperty("user.dir") + "/APK/app-alpha.apk");
