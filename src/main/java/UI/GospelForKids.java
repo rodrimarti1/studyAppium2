@@ -1,7 +1,6 @@
 package UI;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -13,7 +12,6 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
 import static UI.EnvironmentConfig.*;
-//import static org.openqa.selenium.server.RobotRetriever.getRobot;
 
 
 public class GospelForKids {
@@ -153,7 +151,7 @@ public class GospelForKids {
             main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
-            main.testsPassed++;//main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.widget.TextView"));
+            main.testsPassed++;
 
 //            Coloring Book Heading
 
@@ -658,36 +656,6 @@ public class GospelForKids {
              }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             //********** Swipe right from  Coloring Books Screen to Scripture Stories *********
 
 
@@ -839,20 +807,6 @@ public class GospelForKids {
             main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
             main.countTestCases++;
             main.testsPassed++;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         } catch (Exception e) {
             //Failed Test Result
             main.countTestCases++;
@@ -860,14 +814,6 @@ public class GospelForKids {
             System.out.println("SwipeLeftToSAScreenFromSSTest and opened Singalong: \033[31mFailed\033[0m " + e);
         }
     }
-
-
-
-
-
-
-
-
 
 
     //********** Swipe Right from Coloring Books  to Scripture Stories *********

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Just Serve Login" configfailurepolicy="continue" verbose="2">
+    <test name="Android Just Serve Login">
+        <parameter name="appInformation" value="//Users//ravn14//Documents//GitHub//qa-justserve-android//src//main//resources//JustServe.apk" />
+        <parameter name="deviceName" value="Android Device" />
+
+        <classes>
+            <class name="runner.RunTest"/>
+
+        </classes>
+    </test> <!-- Default test -->
+</suite> <!-- Default suite -->
