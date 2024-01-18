@@ -6,7 +6,9 @@
 *.iml
 out/
 .DS_Store
-projects/Gospel-Library-Appium-Tests/src/UI/EnvironmentConfig.java
+**/UI/EnvironmentConfig.java
 *.apk
 exportToHTML/
 Test Runs/
+target/
+*.png
