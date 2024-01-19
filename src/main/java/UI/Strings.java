@@ -4,13 +4,6 @@ public abstract class Strings {
 
     public static String versionNumber = "1.3.0 (1242.203)-ALPHA";
 
-    //log in with
-    public static String user = "jnknielsen@churchofjesuschrist.org";
-    public static String testUser = "jnielsenldschurch@gmail.com";
-    public static String password = "Masada01**";
-    //No Rights for FIR
-    public static String noRightsTestUser1 = "jnknielsen";
-    public static String noRightsTestUser1Password = "Masada01****";
     //FIR Test user
     public static String testUser1 = "misterbeen";
     public static String testUser1UserName = "Mister Been";

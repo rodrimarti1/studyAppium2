@@ -12,11 +12,11 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
 import static UI.EnvironmentConfig.*;
+import static utility.TestUtil.driver;
 
 
 public class GospelForKids {
     static mainFunctions main;
-
     static Timestamp startTime = new Timestamp(System.currentTimeMillis());
     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS");
     boolean msg;
@@ -28,8 +28,8 @@ public class GospelForKids {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("deviceName", "emulator-5554");
-        capabilities.setCapability("app", System.getProperty("user.dir") + "/APK/app-alpha.apk");
-        capabilities.setCapability("platformVersion", "12.0");
+        capabilities.setCapability("app", System.getProperty("user.dir") + "/APK/app-apha.apk");
+        capabilities.setCapability("platformVersion", "13.0");
         capabilities.setCapability("platformName", "android");
         capabilities.setCapability("automationName","uiautomator2");
         capabilities.setCapability("fullReset", false);
@@ -131,8 +131,6 @@ public class GospelForKids {
 
     //********** Launch *********
 
-
-    //passed''
     @Test
     public void ColoringBook() throws Exception {
         try {
@@ -148,167 +146,71 @@ public class GospelForKids {
             main.countTestCases++;
             main.testsPassed++;
 
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
 //            Coloring Book Heading
 
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.widget.TextView"));
+            //main.assertElementExistsByWebElement(coloringBook.coloringBookHeading);
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             // Tapping on Old Testament book
             System.out.print(" Verifying the Old Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             System.out.print(" Verifying the New Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             System.out.print(" Verifying the Book of Mormon Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
             System.out.print(" Verifying the Doctinie and Covenant Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
-
-            System.out.print(" Verifying the Pearl of the great price Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
+            System.out.print(" Verifying the Pearl of Great Book");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
-
-            System.out.print(" Verifying the Gathering the Family of Good Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]/android.view.View"));
+            System.out.print(" Verifying the Gathering the Family of God Book");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
-
-
-            main.scrollDown();
-            System.out.print(" Verifying the Old Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[7]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the New Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[8]/android.view.View"));
-            main.scrollDown();
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Book of Mormon Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Church History Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Article of faith Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Gospel Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            main.scrollDown();
-
-            System.out.print(" Verifying the Parables Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Proclamation of The World Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Love the neighbour Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
             System.out.print(" Verifying the Chrismas Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            main.scrollDown();
-            System.out.print(" Verifying the Service Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Missionaries Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[4]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Heavenly Father Creation Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            System.out.print(" Verifying the Nativity Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[6]/android.view.View"));
-            Thread.sleep(milliseconds_1);
-            main.countTestCases++;
-            main.testsPassed++;
-
-            main.scrollDown();
-            System.out.print(" Verifying the Bible Virtue Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[7]/android.view.View"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verify if Music button exist");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByAccessibilityId("Play music"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verify if back button exist and work  exist");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button"));
-            //main.ClickUIElementByXpath("//android.view.View[@content-desc=\"Back\"]");
+            main.assertElementExistsBy(main.WebElementsByAccessibilityId("Back"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify if back button exist and work  exist");
-            //main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button"));
-            main.ClickUIElementByXpath("//android.view.View[@content-desc=\"Back\"]");
+            main.ClickUIElementByAccessibilityID("Back");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -336,44 +238,44 @@ public class GospelForKids {
             main.testsPassed++;
 
             // Finding and opening coloring book screen
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[2]/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify if Music button exist and work ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.Button"));
-            main.ClickUIElementByXpath("//android.view.View[@content-desc=\"Play music\"]");
+            main.assertElementExistsBy(main.WebElementsByAccessibilityId("Play music"));
+            main.ClickUIElementByAccessibilityID("Play music");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify the content in Sound setting in coloring book");
             System.out.print(" Verifying the  popup for sound setting");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying the  Sound heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying the  Background Sub-Sound heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[3]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[3]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying if there is slide bar to set background music");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.SeekBar[1]  "));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.SeekBar[1]  "));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -385,7 +287,7 @@ public class GospelForKids {
             main.testsPassed++;
 
             System.out.print(" Verifying the  Sound effect Sub-Sound heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[4]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[4]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -397,8 +299,8 @@ public class GospelForKids {
             main.testsPassed++;
 
             System.out.print(" Verify if Done button exist and work ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[2]"));
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[2]");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[2]"));
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.TextView[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -428,27 +330,27 @@ public class GospelForKids {
             main.testsPassed++;
 
             // Finding and opening coloring book screen
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[2]/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verifying the downloaded Old Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View"));
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View");
             Thread.sleep(20000);
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verifying the downloaded Old Testament Book is opening");
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]/android.view.View");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View");
             main.countTestCases++;
             main.testsPassed++;
 
@@ -459,33 +361,33 @@ public class GospelForKids {
             main.testsPassed++;
 
             System.out.print(" Verify if Music button exist and work ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button"));
-            main.ClickUIElementByXpath("//android.view.View[@content-desc=\"Play music\"]");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button"));
+            main.ClickUIElementByAccessibilityID("Play music");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify the content in Sound setting in coloring book");
             System.out.print(" Verifying the  popup for sound setting");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying the  Sound heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying the  Background Sub heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[3]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[3]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying if there is slide bar to set background music");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.SeekBar[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.SeekBar[1]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -497,7 +399,7 @@ public class GospelForKids {
             main.testsPassed++;
 
             System.out.print(" Verifying the  Sound effect Sub heading in sound popup");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[4]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[4]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
@@ -509,53 +411,53 @@ public class GospelForKids {
             main.testsPassed++;
 
             System.out.print(" Verify if Done button exist and work ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("///androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[2]"));
             Thread.sleep(milliseconds_1);
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[2]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView[2]");
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verify if More options button ");
-            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"More options\"]"));
-            main.ClickUIElementByXpath("//android.view.View[@content-desc=\"More options\"]");
+            main.assertElementExistsBy(main.WebElementsByAccessibilityId("More options"));
+            main.ClickUIElementByAccessibilityID("More options");
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify the more option button drop down reset option ");
-            main.ClickUIElementByXpath("//android.view.View[@content-desc=\"More options\"]");
+            main.ClickUIElementByAccessibilityID("More options");
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify the reset button exist and working ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View"));
-            main.ClickUIElementByXpath("/hierarchy/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View/android.widget.TextView");
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View/android.view.View/android.widget.ScrollView/android.view.View"));
+            main.ClickUIElementByXpath("//android.view.View/android.view.View/android.widget.ScrollView/android.view.View/android.widget.TextView");
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verify if reset confirmation popup appear ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View"));
             //Verify confirmation popup information
             //Question
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[1]"));
             //Detail of question
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.TextView[2]"));
 
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.print(" Verify cancel button and ok button ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View"));
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button"));
             main.countTestCases++;
             main.testsPassed++;
 
             //Verify ok button working
 
             System.out.print(" Verify and click ok button");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button"));
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button");
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button"));
+            main.ClickUIElementByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button");
             main.countTestCases++;
             main.testsPassed++;
 
@@ -581,42 +483,42 @@ public class GospelForKids {
             main.testsPassed++;
 
             // Finding and opening coloring book screen
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[2]/android.view.View[2]"));
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]");
             Thread.sleep(milliseconds_1);
             main.countTestCases++;
             main.testsPassed++;
 
             System.out.print(" Verifying the downloaded Old Testament Book");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
             Thread.sleep(20000);
             main.countTestCases++;
             main.testsPassed++;
 
 
             System.out.println("verify coloring page ");
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
 
             //Verify back button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button"));
-            main.ClickUIElementByXpath("/android.view.View[@content-desc=\"Back\"]");
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button"));
+            main.ClickUIElementByAccessibilityID("Back");
 
            //Open page again
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]");
 
             //Verify Page heading
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.widget.TextView"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.widget.TextView"));
 
             //verify share button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View/android.view.View[1]"));
 
             //Verify music button
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.Button"));
 
             main.countTestCases++;
             main.testsPassed++;
@@ -627,22 +529,22 @@ public class GospelForKids {
 
             //verify toolbar anf its content
             System.out.println("verifying toolbar and its contents ");
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView]"));
 
             //Verifying magnifier availability
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[1]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[1]/android.widget.Button"));
 
             //Verifying undo availability
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[2]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[2]/android.widget.Button"));
 
             //Verifying redo availability
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[3]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[3]/android.widget.Button"));
 
             //Verifying clear color availability
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[4]/android.widget.Button"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[4]/android.widget.Button"));
 
             //erify coloring tool
-            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[5]"));
+            main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[2]/android.view.View[3]/android.widget.HorizontalScrollView/android.view.View[5]"));
 
             main.countTestCases++;
             main.testsPassed++;
@@ -655,96 +557,6 @@ public class GospelForKids {
 
              }
         }
-
-            //********** Swipe right from  Coloring Books Screen to Scripture Stories *********
-
-
-
-            @Test
-            public void SwipeLeftOpenScriptureStories() throws Exception {
-                try {
-                    //Wait for Splash Screen to display and dismiss
-                    main.SplashScreenWait();
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Test Start
-                    System.out.println("Testing Swipe Left To SS from CB.");
-                    //Swipe Left
-                    main.SwipeLeftByCoordinates(526, 1632, 901, 1642);
-                    main.countTestCases++;
-                    main.testsPassed++;
-
-
-                    //Scripture story button exists
-                    System.out.println("verify Scripture stories button");
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]"));
-                    Thread.sleep(milliseconds_1);
-                            main.countTestCases++;
-                            main.testsPassed++;
-
-                    //Open Scripture stiory
-                    System.out.println("verify Scripture stories opens");
-                            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]");
-                    Thread.sleep(milliseconds_1);
-                            main.countTestCases++;
-                            main.testsPassed++;
-
-
-                    //Verify Scripture story screen content
-                    System.out.println("Verify Scripture story screen content");
-
-                    //verify theme colored header
-                    System.out.println("Verify the header is displayed");
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]"));
-                            main.countTestCases++;
-                            main.testsPassed++;
-                    // verify old testament Logo and title
-                    System.out.println("verify old testament Logo exist ");
-
-                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Old Testament\"]"));
-                    System.out.println(" verify old testament Title exist" );
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.TextView"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Verify New Testament Logo and its Title
-                    System.out.println("verify new testament Logo exist ");
-                            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"New Testament\"]"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    System.out.println(" verify New testament Title exist" );
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.widget.TextView"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Verify Book of Mormon Logo and its Title
-                    System.out.println("verify Book of Mormon Logo exist ");
-                            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Book of Mormon\"]"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    System.out.println("verify Book of Mormon title exist ");
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.TextView"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Verify Doctrine and Covenants Logo and Title
-
-                    System.out.println(" Verify if Doctrine and Covenants Logo exist");
-                            main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Book of Mormon\"]"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    System.out.println(" Verify if Doctrine and Covenants title exist ");
-                            main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[3]/android.widget.TextView"));
-                    main.countTestCases++;
-                    main.testsPassed++;
-
-
-                } catch (Exception e) {
-                    //Failed Test Result
-                    main.countTestCases++;
-                    main.testsFailed++;
-                    System.out.println("SwipeLeftToSAScreenFromSSTest and opened Singalong: \033[31mFailed\033[0m " + e);
-                }
-            }
-
-
 
     @Test
     public void ScriptureStoriesOldTestamentScreen() throws Exception {
@@ -763,48 +575,48 @@ public class GospelForKids {
 
             //Scripture story button exists
             System.out.println("verify Scripture stories button");
-                main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]"));
+                main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
 
             //Open Scripture stiory
             System.out.println("verify Scripture stories opens");
-                main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]");
+                main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]");
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
 
             System.out.println("verify if Old Testmant exist and open and verify content ");
-                main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Old Testament\"]"));
+                main.assertElementExistsBy(main.WebElementsByAccessibilityId("Old Testament"));
 
             System.out.println(" verify old testament Title exist" );
-                main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.TextView"));
+                main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.TextView"));
                     main.countTestCases++;
                     main.testsPassed++;
 
 
             System.out.println("Opening Old testament");
-                main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
+                main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
                     main.countTestCases++;
                     main.testsPassed++;
 
             System.out.println(" verify the Olt testement page content" );
 
             System.out.println(" verify the Olt testement heading" );
-                main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"));
+                main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"));
                     main.countTestCases++;
                     main.testsPassed++;
 
             System.out.println(" verify if user can tap and download a item " );
-                main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"));
-                main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
+                main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.TextView"));
+                main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
                 Thread.sleep(40000);
                     main.countTestCases++;
                     main.testsPassed++;
 
 
-            main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
+            main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]");
             main.countTestCases++;
             main.testsPassed++;
         } catch (Exception e) {
@@ -828,7 +640,7 @@ public class GospelForKids {
                     //Test Start
                     System.out.println("Testing SwipeRightToSSScreenFromCBTest.");
 
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -838,12 +650,12 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsPassed++;
                     //Scripture Stories button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
                     //Scripture Stories icon exists
-                    main.ClickUIElementByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]");
+                    main.ClickUIElementByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]");
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -854,70 +666,6 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsFailed++;
                     System.out.println("SwipeRightToSSScreenFromCBTest: \033[31mFailed\033[0m " + e);
-                }
-            }
-
-            //********** Swipe Right To Coloring Books Screen From Sing Along *********
-            @Test
-            public void SwipeRightToCBScreenFromSATest () throws Exception {
-                try {
-                    //Wait for Splash Screen to display and dismiss
-                    main.SplashScreenWait();
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Test Start
-                    System.out.println("Testing SwipeRightToCBScreenFromSATest.");
-                    //Swipe Left
-                    main.SwipeLeftByScreenSize();
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Coloring Books button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Coloring Books icon exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Coloring Books\"]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    ;
-                    //Swipe Left
-                    main.SwipeLeftByCoordinates(1050, 1940, 500, 1940);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Sing Along button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Sing Along icon exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Sing Along\"]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Swipe Right
-                    main.SwipeRightByCoordinates(600, 1940, 800, 1940);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Coloring Books button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    //Coloring Books icon exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.View[@content-desc=\"Coloring Books\"]"));
-                    Thread.sleep(milliseconds_1);
-                    main.countTestCases++;
-                    main.testsPassed++;
-                    ;
-                    //Passed Test Result
-                    System.out.println("SwipeRightToCBScreenFromSATest: \033[32mPassed\033[0m");
-                } catch (Exception e) {
-                    //Failed Test Result
-                    main.countTestCases++;
-                    main.testsFailed++;
-                    System.out.println("SwipeRightToCBScreenFromSATest: \033[31mFailed\033[0m " + e);
                 }
             }
 
@@ -936,7 +684,7 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsPassed++;
                     //Coloring Books button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -945,7 +693,7 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsPassed++;
                     //Sing Along button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -954,7 +702,7 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsPassed++;
                     //Coloring Books button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//android.view.ViewGroup/android.view.View/android.view.View/android.view.View[4]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -963,7 +711,7 @@ public class GospelForKids {
                     main.countTestCases++;
                     main.testsPassed++;
                     //Scripture Stories button exists
-                    main.assertElementExistsBy(main.WebElementsByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[3]/android.view.View[1]"));
+                    main.assertElementExistsBy(main.WebElementsByXpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[3]/android.view.View[1]"));
                     Thread.sleep(milliseconds_1);
                     main.countTestCases++;
                     main.testsPassed++;
@@ -976,53 +724,6 @@ public class GospelForKids {
                     System.out.println("SwipeRightToSSScreenFromSATest: \033[31mFailed\033[0m " + e);
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             /*      Temporarily removed from app
 
             //********** Sing Along Home Screen *********

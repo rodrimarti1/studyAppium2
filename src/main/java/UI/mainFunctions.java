@@ -2,6 +2,7 @@ package UI;
 
         //import com.google.common.collect.ImmutableMap;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
@@ -819,11 +820,11 @@ public class mainFunctions {
     public void swipeDown() {
         int screenHeight = driver.manage().window().getSize().getHeight();
         int screenWidth = driver.manage().window().getSize().getWidth();
-//        ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
-//                "width", screenWidth / 2, "height", screenHeight / 10 * 5,
-//                "direction", "down",
-//                "percent", 3.0
-//        ));
+        ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
+                "width", screenWidth / 2, "height", screenHeight / 10 * 5,
+                "direction", "down",
+                "percent", 3.0
+        ));
         System.out.println("Swiping Down...");
 
     }

@@ -1,7 +1,7 @@
 package runner;
 
 import io.cucumber.testng.CucumberOptions;
-import UI.mainFunctions;
+import utility.TestUtil;
 
 @CucumberOptions(
         features= {"src/test/java/features"},
@@ -17,5 +17,5 @@ import UI.mainFunctions;
 )
 
 
-public class RunTest extends mainFunctions {
+public class RunTest extends TestUtil {
 }
